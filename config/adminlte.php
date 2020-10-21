@@ -16,7 +16,7 @@ return [
 
     'title' => 'SISBIL',
     'title_prefix' => '',
-    'title_postfix' => '2,0',
+    'title_postfix' => '',
 
     /*
     |--------------------------------------------------------------------------
@@ -31,7 +31,7 @@ return [
     */
 
     'use_ico_only' => false,
-    'use_full_favicon' => false,
+    'use_full_favicon' => true,
 
     /*
     |--------------------------------------------------------------------------

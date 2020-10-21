@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateComandosTable extends Migration
+class CreateFracaosTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,10 @@ class CreateComandosTable extends Migration
      */
     public function up()
     {
-        Schema::create('comandos', function (Blueprint $table) {
+        Schema::create('fracoes', function (Blueprint $table) {
             $table->id();
-            $table->string('nomeCmdo');
-            $table->string('siglaCmdo');
-            $table->string('codomCmdo');
-            $table->string('codugCmdo');
+            $table->string('nomeFr');
+            $table->string('siglaFr');
         });
     }
 
@@ -29,6 +27,6 @@ class CreateComandosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('comandos');
+        Schema::dropIfExists('fracoes');
     }
 }

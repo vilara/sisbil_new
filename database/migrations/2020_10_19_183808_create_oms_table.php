@@ -15,7 +15,10 @@ class CreateOmsTable extends Migration
     {
         Schema::create('oms', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nomeOm');
+            $table->string('siglaOm');
+            $table->string('codomOm');
+            $table->string('codugOm');
         });
     }
 

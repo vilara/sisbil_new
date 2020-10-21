@@ -15,7 +15,8 @@ class CreateSusTable extends Migration
     {
         Schema::create('sus', function (Blueprint $table) {
             $table->id();
-            $table->timestamps();
+            $table->string('nomeSu');
+            $table->string('siglaSu');
         });
     }
 
